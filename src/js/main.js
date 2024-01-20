@@ -39,7 +39,7 @@ rollTheDice.addEventListener('click', () => {
   let diceNumber = Math.trunc(Math.random() * 6) + 1;
 
   dicePicture.classList.remove('hidden');
-  dicePicture.src = `/images/dice${diceNumber}.png`;
+  dicePicture.src = `./images/dice${diceNumber}.png`;
 
   if (diceNumber !== 1) {
     currentPlayer.textContent = currentPlayerPoints + diceNumber;
