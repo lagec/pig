@@ -1,0 +1,9 @@
+$current-player-field-color: #f2ddc7;
+$second-player-field-color: #f48a20d8;
+
+%flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

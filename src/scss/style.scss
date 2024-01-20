@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import 'normalize.css';
+@import './visually-hidden.scss';
+@import './variables.scss';
+@import './buttons.scss';
+@import './player-board.scss';
+@import './responsive.scss';
+
+html {
+  height: 100vh;
+  body {
+    height: inherit;
+    background: linear-gradient(45deg, rgb(221, 156, 28), rgb(193, 56, 43))
+      no-repeat;
+    @extend %flex-center-column;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.waiting {
+  background-color: $second-player-field-color;
+  transition: all, 0.8s;
+  opacity: 0.4;
+}
+
+.hidden {
+  display: none;
+}

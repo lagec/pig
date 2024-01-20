@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import 'normalize.css';
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html body, .app__player1-points-block, .app__player2-points-block, .app__inner .player-board, .app__interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  transition: background-color, 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(243, 242, 242, 0.8980392157);
+}
+
+.app__interface {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app__interface-new-btn, .app__interface-dice-img {
+  margin-bottom: 33px;
+}
+.app__interface-roll-btn {
+  margin-bottom: 8px;
+}
+
+.app {
+  min-width: 650px;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+  background-color: #f2ddc7;
+}
+.app__inner {
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+.app__player1 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.app__player2 {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.app__player1-total-score, .app__player2-total-score {
+  font-size: 3.99rem;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.app__player1-points-block, .app__player2-points-block {
+  width: 130px;
+  background-color: rgba(251, 96, 0, 0.5);
+  padding: 15px 0;
+  border-radius: 5px;
+}
+.app__player1-points-block-heading, .app__player2-points-block-heading {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.app__player1-points-block-score, .app__player2-points-block-score {
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    min-width: 450px;
+  }
+  .app__player1-points-block, .app__player2-points-block {
+    width: 100px;
+  }
+  .app__interface-dice-img {
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+  .btn__text {
+    display: none;
+  }
+}
+html {
+  height: 100vh;
+}
+html body {
+  height: inherit;
+  background: linear-gradient(45deg, rgb(221, 156, 28), rgb(193, 56, 43)) no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+.waiting {
+  background-color: rgba(244, 138, 32, 0.8470588235);
+  transition: all, 0.8s;
+  opacity: 0.4;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

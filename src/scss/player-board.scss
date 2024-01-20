@@ -1,0 +1,53 @@
+.app {
+  min-width: 650px;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.6);
+  background-color: $current-player-field-color;
+
+  &__inner {
+    min-height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+
+    .player-board {
+      @extend %flex-center-column;
+    }
+  }
+
+  &__player1 {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  &__player2 {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__player1,
+  &__player2 {
+    &-total-score {
+      font-size: 3.99rem;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    &-points-block {
+      &-heading {
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      &-score {
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      @extend %flex-center-column;
+      width: 130px;
+      background-color: rgba(#fb6000fb, 0.5);
+      padding: 15px 0;
+      border-radius: 5px;
+    }
+  }
+}
