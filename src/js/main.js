@@ -62,7 +62,7 @@ keepPoints.addEventListener('click', () => {
   }
 
   currentPlayerTotal.textContent = +currentPlayerCurrent.textContent + +currentPlayerTotal.textContent;
-  if (currentPlayerTotal.textContent >= 100) {
+  if (currentPlayerTotal.textContent >= 50) {
     currentPlayerTotal.textContent = '🏆';
     anotherPlayerTotal.textContent = '🐽';
     dicePicture.classList.add('hidden');
