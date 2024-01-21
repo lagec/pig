@@ -110,10 +110,16 @@ html body, .app__player1-points-block, .app__player2-points-block, .app__inner .
     min-width: 350px;
   }
   .app__player1-points-block, .app__player2-points-block {
-    width: 70px;
+    width: 80px;
+    font-size: 0.9rem;
+  }
+  .app__player1-total-score, .app__player2-total-score {
+    font-size: 2.9rem;
   }
   .app__interface-dice-img {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    width: 75px;
+    height: 75px;
   }
   .btn {
     font-size: 1.5rem;

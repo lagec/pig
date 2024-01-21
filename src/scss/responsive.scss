@@ -27,11 +27,17 @@
     &__player1,
     &__player2 {
       &-points-block {
-        width: 70px;
+        width: 80px;
+        font-size: 0.9rem;
+      }
+      &-total-score {
+        font-size: 2.9rem;
       }
     }
     &__interface-dice-img {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      width: 75px;
+      height: 75px;
     }
   }
 
